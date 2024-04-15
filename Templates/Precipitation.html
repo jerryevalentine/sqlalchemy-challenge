@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Precipitation Data</title>
+</head>
+<body>
+    <h1>API - Precipitation Data</h1>
+    
+    <p>This API endpoint returns the precipitation data for the last 12 months.</p>
+    
+    <h2>Usage</h2>
+    <p>To access the precipitation data, make a GET request to the following endpoint:</p>
+    <code>/api/v1.0/precipitation</code>
+    
+    <h2>Example Response</h2>
+    <pre>
+        {
+            "2016-01-01": 0.08,
+            "2016-01-02": 0.0,
+            "2016-01-03": 0.0,
+            ...
+        }
+    </pre>
+    
+    <h2>Navigation</h2>
+    <ul>
+        {% for page in pages %}
+        <li><a href="{{ page.url }}">{{ page.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

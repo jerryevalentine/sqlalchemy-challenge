@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stations</title>
+</head>
+<body>
+    <h1>List of Stations</h1>
+    
+    <ul>
+        {% for station in stations %}
+        <li><strong>Station:</strong> {{ station.station }}, <strong>Name:</strong> {{ station.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

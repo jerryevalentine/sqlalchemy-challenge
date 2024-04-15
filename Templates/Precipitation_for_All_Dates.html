@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precipitation for All Dates</title>
+</head>
+<body>
+    <h1>Precipitation for All Dates</h1>
+    
+    <!-- Display the plot image -->
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Precipitation Plot">
+    
+    <h2>Navigation</h2>
+    <ul>
+        {% for page in pages %}
+        <li><a href="{{ page.url }}">{{ page.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
